@@ -45,8 +45,66 @@
   padding-right: 12px;
 }
 
-button {
+.unselected-nav-button {
   border-radius: 6px;
-  height: 36px;
+  border: 1px solid #000;
+  height: 40px;
+  font-size: 1.5rem;
+  font-weight: 600;
   width: 90px;
+  cursor: pointer;
+  color: #000;
+  background-color: #f0f0f0;
+  outline: 0;
+  padding: 0 17px;
+  letter-spacing: -.8px;
+  min-width: 140px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s, box-shadow .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  margin-right: 6px;
+}
+
+.unselected-nav-button:hover {
+  background-color: #f8f8f8;
+  transform: translateY(-2px);
+}
+
+.unselected-nav-button:active {
+  background-color: #ffffff;
+  box-shadow: 0 0 6px black;
+}
+
+.selected-nav-button {
+  border-radius: 6px;
+  border: 1px solid #000;
+  height: 40px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 90px;
+  cursor: pointer;
+  color: #000;
+  background-color: #D16237;
+  outline: 0;
+  padding: 0 17px;
+  letter-spacing: -.8px;
+  min-width: 140px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s, box-shadow .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  margin-right: 6px;
+}
+
+.selected-nav-button:hover {
+  background-color: #bb5831;
+  transform: translateY(-2px);
+}
+
+.selected-nav-button:active {
+  background-color: #b35530;
+  box-shadow: 0 0 4px black;
 }
