@@ -24,7 +24,7 @@
   display: flex;
   align-items: center;
   height: 100%;
-  padding-right: 12px;              /* Add some padding to the right side */
+  padding-right: 12px; 
 }
 
 .profile-icon {
@@ -38,7 +38,7 @@
 .right-content {
   display: flex;
   align-items: center;
-  justify-content: flex-end;        /* Aligns profile to the right */
+  justify-content: flex-end;   
 }
 
 .buttons-container {
