@@ -43,6 +43,14 @@
   height: 35px;
 }
 
+.std-frame {
+  background-color: grey;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .alert-text {
   font-weight: 600;
   font-size: 18px;
