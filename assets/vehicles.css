@@ -44,7 +44,7 @@
 }
 
 .std-frame {
-  background-color: grey;
+  background-color: #80808059;
   height: 35px;
   display: flex;
   justify-content: center;
