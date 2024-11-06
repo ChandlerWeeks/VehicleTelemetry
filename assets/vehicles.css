@@ -41,6 +41,17 @@
 .alert-frame {
   background-color: #e6bf00;
   height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.std-frame {
+  background-color: #80808059;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .alert-text {
