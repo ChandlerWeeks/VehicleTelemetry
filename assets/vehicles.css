@@ -4,7 +4,7 @@
   padding-left: 380px;
 }
 
-.content-frame {
+.vehicle-container {
   margin: 10px;
   padding: 10px;
   border: 1px solid #000;
@@ -61,4 +61,24 @@
 
 .vehicle:hover {
   cursor: pointer;
+}
+
+.small-svg {
+  width: 150px;
+  height: 85px;
+}
+
+.vehicle-silhouette {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number {
+  font-size: 48px;
+  font-weight: 600;
+  fill: white;
+  text-anchor: middle;
 }

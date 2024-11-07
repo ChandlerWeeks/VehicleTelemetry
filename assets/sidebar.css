@@ -1,10 +1,12 @@
 .sidebar {
   background-color: #b4b4b4;
-  position: absolute;
+  position: fixed;
   top: 60px;
+  left:0;
   width: 380px;
   height: 100%;
   border-right: 1px solid black;
+  z-index: 1000;
 }
 
 .search-wrapper{
