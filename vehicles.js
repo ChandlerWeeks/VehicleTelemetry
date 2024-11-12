@@ -14,7 +14,20 @@ function addVehiclesToPage(vehicles) {
   const vehicleContainer = document.getElementById("vehicles-container");
 
   vehicles.forEach((vehicle) => {
-    console.log("working kinda");
+    // process data for the card
+    if (vehicle.in_service) {
+      in_service = "Yes"
+    } else {
+      in_service = "No"
+    }
+
+    if (vehicle.alerts.length === 0) {
+      console.log("No alerts");
+    } else if (vehicle.alerts.length === 1) {
+      console.log("one alert");
+    } else {
+      console.log("several alerts");
+    }
     const vehicleDiv = document.createElement("div");
     vehicleDiv.classList.add("vehicle");
     vehicleDiv.id = `vehicle${vehicle.id}`;
@@ -23,6 +36,7 @@ function addVehiclesToPage(vehicles) {
         <div class="error-frame">
           <p class="alert-text">Brakes - 10/21/2024</p>
         </div>
+        <p class='card-description'><strong>${vehicle.year} ${vehicle.make} ${vehicle.model}</strong></p>
         <div class="vehicle-silhouette">
           <svg class="small-svg" id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 377.6 159.02">
             <defs>
@@ -38,10 +52,10 @@ function addVehiclesToPage(vehicles) {
             </g>
           </svg>
         </div>
+        <p class='card-description'><strong>In Service: ${in_service}</strong></p>
       </div>
     `;
     vehicleContainer.appendChild(vehicleDiv);
-
 
     const vehicleButtons = document.querySelectorAll(".vehicle");
 
