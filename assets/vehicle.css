@@ -1,3 +1,41 @@
-.alert{
-    margin-top: 20px;
+.section{
+    padding-left: 40px;
+    padding-right: 40px;
+    margin:auto;
+}
+
+.body{
+    background-color: #D0D0D0;
+}
+
+#top-alert{
+    background-color: yellow;
+    padding:15px;
+    margin-top: 60px;
+}
+
+#maintenence{
+    border-color: #ff6600;
+}
+
+#gen-info{
+    border-color: #660099
+}
+
+.iblock{
+    background-color:white;
+    border-style:solid;
+    border-width: 7px;
+    border-radius: 30px;
+    padding:10px;
+    margin-top:10px;
+}
+
+.route-subtitles
+{
+    color: grey;
+}
+
+hr {
+    border: 3px solid black;
 }
