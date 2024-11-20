@@ -1,7 +1,6 @@
-.section{
-    padding-left: 40px;
-    padding-right: 40px;
-    margin:auto;
+.body{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .body{
@@ -29,6 +28,8 @@
     border-radius: 30px;
     padding:10px;
     margin-top:10px;
+    margin-bottom:10px;
+    height:95%;
 }
 
 .route-subtitles
