@@ -38,6 +38,12 @@
   display: flex;
 }
 
+.center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .right-content {
   display: flex;
   align-items: center;
@@ -110,4 +116,39 @@
 .selected-nav-button:active {
   background-color: #b35530;
   box-shadow: 0 0 4px black;
+}
+
+.vehicle-telemetry-title {
+  color: white;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.left-content .material-icons {
+  font-size: 36px; /* Adjust the size as needed */
+  color: white; /* Adjust the color as needed */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Adjust the size as needed */
+  height: 40px; /* Adjust the size as needed */
+  border: 2px solid white; /* Adjust the border color as needed */
+  border-radius: 50%; /* Make it circular */
+}
+
+.profile-icon {
+  font-size: 36px; /* Adjust the size as needed */
+  color: white; /* Adjust the color as needed */
 }

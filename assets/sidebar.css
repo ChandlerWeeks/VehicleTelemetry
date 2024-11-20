@@ -2,11 +2,21 @@
   background-color: #b4b4b4;
   position: fixed;
   top: 60px;
-  left:0;
+  left:-380px;
   width: 380px;
   height: 100%;
   border-right: 1px solid black;
   z-index: 1000;
+
+  transition: left 0.3s ease-in-out;
+}
+
+.sidebar.visible {
+  left: 0;
+}
+
+.hidden {
+  display: none;
 }
 
 .search-wrapper{

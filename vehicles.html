@@ -2,43 +2,50 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+
 <html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Vehicles Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./assets/vehicles.css">
-    <link rel="stylesheet" href ="./assets/reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./assets/reset.css">
     <link rel="stylesheet" href="./assets/header.css">
     <link rel="stylesheet" href="./assets/sidebar.css">
+    <link rel="stylesheet" href="./assets/vehicles.css">
     <script src="header.js"></script>
-    <script src="vehicles.js"></script>
   </head>
   <body>
+
+    <!-- Header  -->
     <div class="header">
       <div class="bar">
         <div class="left-content">
+          <div class="left-content" id="hamburger">
+            <i class="material-icons">menu</i>
+          </div>
+        </div>
+        <div class="center-content">
           <div class="logo-container">
             <img src="assets/images/logo.png" class="logo" alt="fedex-logo">
+            <h2 class="vehicle-telemetry-title">Vehicle Telemetry</h2>
           </div>
         </div>
         <div class="right-content">
-          <div class="buttons-container">
-            <button class="selected-nav-button" id="vehicle-button">Vehicles</button>
-            <button class="unselected-nav-button" id="map-button">Map</button>
-          </div>
           <div class="profile-container">
-            <img src="assets/images/profile_icon.png" class="profile-icon">
+            <div class="profile-icon-wrapper">
+              <i class="material-icons profile-icon">person</i>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="sidebar">
+
+    <!--  Collapseable Sidebar  -->
+    <div class="sidebar" id="sidebar">
       <h1>Filters</h1>
       <div class="search-wrapper">
         <div class="search">
@@ -55,13 +62,16 @@
       <p>Installed Technology</p>
     </div>
 
-    <div class="content">
-      <div class="main-content">
-        <div class="vehicle-container" id="vehicles-container">
 
+      <!--  Dynamic Main Content  -->
+      <div class="main" id="main-content">
+        <div class="card text-center" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">2014 Ford F-150</h5>
+          </div>
         </div>
       </div>
-  </div>
-  
+
+
   </body>
 </html>

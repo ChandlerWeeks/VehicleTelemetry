@@ -1,3 +1,13 @@
+.main {
+  margin-left: 0;
+  margin-top: 60px;
+  transition: 0.3s ease-in-out;
+}
+
+.main.shifted {
+  margin-left: 380px;
+}
+
 .content {
   padding-top: 60px;
   padding-left: 12px;
@@ -7,7 +17,6 @@
 .vehicle-container {
   margin: 10px;
   padding: 10px;
-  border: 1px solid #000;
   border-radius: 12px;
   display: flex;
   width: 98%;
