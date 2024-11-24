@@ -95,3 +95,16 @@
 .card-description {
   text-align: center;
 }
+
+/* Custom styles for thicker borders */
+.card.border-danger {
+  border-width: 6px !important;
+}
+
+.card.border-warning {
+  border-width: 6px !important;
+}
+
+.card-header {
+  border-radius: 0 !important;
+}
