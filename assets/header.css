@@ -7,9 +7,9 @@
   height: 60px;
   padding-left: 12px;
   display: flex;
-  justify-content: space-between; 
-  align-items: center;           
-  z-index: 1000;  
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
 }
 
 .logo {
@@ -27,7 +27,7 @@
   display: flex;
   align-items: center;
   height: 100%;
-  padding-right: 12px; 
+  padding-right: 12px;
 }
 
 .profile-icon {
@@ -47,7 +47,7 @@
 .right-content {
   display: flex;
   align-items: center;
-  justify-content: flex-end;   
+  justify-content: flex-end;
 }
 
 .buttons-container {
@@ -66,11 +66,11 @@
   background-color: #f0f0f0;
   outline: 0;
   padding: 0 17px;
-  letter-spacing: -.8px;
+  letter-spacing: -0.8px;
   min-width: 140px;
   text-align: center;
   text-decoration: none;
-  transition: all .3s, box-shadow .1s;
+  transition: all 0.3s, box-shadow 0.1s;
   user-select: none;
   -webkit-user-select: none;
   margin-right: 6px;
@@ -95,14 +95,14 @@
   width: 90px;
   cursor: pointer;
   color: #000;
-  background-color: #D16237;
+  background-color: #d16237;
   outline: 0;
   padding: 0 17px;
-  letter-spacing: -.8px;
+  letter-spacing: -0.8px;
   min-width: 140px;
   text-align: center;
   text-decoration: none;
-  transition: all .3s, box-shadow .1s;
+  transition: all 0.3s, box-shadow 0.1s;
   user-select: none;
   -webkit-user-select: none;
   margin-right: 6px;
@@ -124,6 +124,12 @@
   font-weight: 600;
   margin: 0;
   padding: 0;
+}
+
+@media (max-width: 720px) {
+  .vehicle-telemetry-title {
+    display: none !important; /* Use !important to ensure it overrides other styles */
+  }
 }
 
 .left-content .material-icons {
@@ -151,4 +157,56 @@
 .profile-icon {
   font-size: 36px; /* Adjust the size as needed */
   color: white; /* Adjust the color as needed */
+}
+
+.css-navbar {
+  position: fixed; /* Use fixed or absolute positioning */
+  top: 60px; /* Position it 60px from the top */
+  height: 50px;
+  width: 100%; /* Make it span the full width */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Distribute space between items */
+  background-color: #333; /* Background color */
+  color: white; /* Text color */
+  z-index: 1000; /* Ensure it is above other elements */
+}
+
+.navbar-list {
+  list-style-type: none; /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use flexbox to display items side by side */
+  justify-content: space-between; /* Distribute space evenly */
+  align-items: center; /* Center items vertically */
+  background-color: #333; /* Background color */
+}
+
+.navbar-item {
+  display: inline; /* Ensure list items are inline */
+}
+
+.navbar-item a {
+  display: block;
+  color: white; /* Text color */
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none; /* Remove underline */
+}
+
+.navbar-item a:hover {
+  background-color: #111; /* Change background on hover */
+}
+
+.nav-item {
+  margin: 0 auto; /* Center the item horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Text color */
+  padding: 14px 20px;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+  background-color: #111; /* Change background on hover */
 }
