@@ -1,13 +1,14 @@
 .sidebar {
   background-color: #b4b4b4;
   position: fixed;
-  top: 60px;
+  top: 110px;
   left: -380px;
   width: 380px;
   height: 100%;
   border-right: 1px solid black;
   z-index: 1000;
   transition: left 0.3s ease-in-out;
+  overflow: hidden;
 }
 
 .sidebar.visible {
@@ -16,6 +17,20 @@
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    width: 100%; 
+    left: -100%; 
+    transition: none;
+  }
+
+  .sidebar.visible {
+    left: 0; 
+    transition: none;
+    border: none;
+  }
 }
 
 .search-wrapper {
@@ -80,11 +95,12 @@ label {
 }
 
 .dropdown {
-  width: 100%;
+  width: 90%;
   height: 36px;
   border: 1px solid #660099;
   border-radius: 5px;
   padding: 10px;
+  margin: 10px;
   color: #222;
   outline: none;
   background-color: #fff;

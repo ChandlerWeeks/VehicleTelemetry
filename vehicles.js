@@ -55,13 +55,13 @@ function addVehiclesToPage(vehicles) {
     vehicleDiv.innerHTML = `
     <div class="card-header ${bg_color} text-white">${warning_text}</div>
     <div class="card-body">
-      <h5 class="card-title">${vehicle.year} ${vehicle.make} ${vehicle.model}</h5>
+      <h5 class="card-title car-make-model">${vehicle.year} ${vehicle.make} ${vehicle.model}</h5>
       <img class="card-img-top" src="./assets/images/Asset_2.png" alt="Card image cap">
     </div>
   `;
     vehicleContainer.appendChild(vehicleDiv);
 
-    const vehicleButtons = document.querySelectorAll(".vehicle");
+    const vehicleButtons = document.querySelectorAll(".card");
 
     vehicleButtons.forEach((div) => {
       div.addEventListener("click", () => {
