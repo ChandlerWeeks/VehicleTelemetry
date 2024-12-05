@@ -25,23 +25,33 @@
     crossorigin=""></script>
   </head>
   <body>
+    <!-- Header  -->
     <div class="header">
       <div class="bar">
         <div class="left-content">
-          <div class="logo-container">
-            <img src="assets/images/logo.png" class="logo" alt="fedex-logo">
-          </div>
+          <img src="assets/images/logo.png" class="logo" alt="fedex-logo">
+          <h2 class="vehicle-telemetry-title">Vehicle Telemetry</h2>
+        </div>
+        <div class="center-content">
+          <div class="logo-container"></div>
         </div>
         <div class="right-content">
-          <div class="buttons-container">
-            <button class="unselected-nav-button" id="vehicle-button">Vehicles</button>
-            <button class="selected-nav-button" id="map-button">Map</button>
-          </div>
           <div class="profile-container">
-            <img src="assets/images/profile_icon.png" class="profile-icon">
+            <div class="profile-icon-wrapper">
+              <i class="material-icons profile-icon">person</i>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- Navbar  -->
+    <div class="css-navbar">
+      <ul class="navbar-list">
+        <li class="navbar-item nav-item" id="hamburger"><i class="material-icons">menu</i>Filters</li>
+        <li class="navbar-item"><a href="vehicles.html">Vehicles</a></li>
+        <li class="navbar-item navbar-item-active"><a href="map.html">Map</a></li>
+      </ul>
     </div>
 
     <div class="sidebar">
