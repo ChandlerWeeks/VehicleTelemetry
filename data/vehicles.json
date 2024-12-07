@@ -16,8 +16,8 @@
       "alert_level": "critical",
       "alert_date": "10/21/2024",
       "coordinates": {
-        "latitude": 35.1495,
-        "longitude": -90.0490
+        "latitude": 35.1895,
+        "longitude": -90.0430
       }
     },
     {
@@ -36,8 +36,8 @@
       "alert_level": "critical",
       "alert_date": "10/21/2024",
       "coordinates": {
-        "latitude": 35.1500,
-        "longitude": -90.0500
+        "latitude": 35.1200,
+        "longitude": -90.0800
       }
     },
     {
@@ -56,8 +56,8 @@
       "alert_level": "critical",
       "alert_date": "10/21/2024",
       "coordinates": {
-        "latitude": 35.1480,
-        "longitude": -90.0480
+        "latitude": 35.1484,
+        "longitude": -90.0680
       }
     },
     {
@@ -76,8 +76,8 @@
       "alert_level": "critical",
       "alert_date": "10/21/2024",
       "coordinates": {
-        "latitude": 35.1475,
-        "longitude": -90.0475
+        "latitude": 35.1875,
+        "longitude": -90.0875
       }
     },
     {
@@ -96,8 +96,8 @@
       "alert_level": "caution",
       "alert_date": "10/21/2024",
       "coordinates": {
-        "latitude": 35.1490,
-        "longitude": -90.0495
+        "latitude": 35.1290,
+        "longitude": -90.0595
       }
     },
     {
@@ -116,8 +116,8 @@
       "alert_level": "caution",
       "alert_date": "10/21/2024",
       "coordinates": {
-        "latitude": 35.1485,
-        "longitude": -90.0485
+        "latitude": 35.1185,
+        "longitude": -90.0185
       }
     },
     {
@@ -136,8 +136,8 @@
       "alert_level": "caution",
       "alert_date": "10/21/2024",
       "coordinates": {
-        "latitude": 35.1470,
-        "longitude": -90.0470
+        "latitude": 35.1370,
+        "longitude": -90.0970
       }
     },
     {
@@ -157,7 +157,7 @@
       "alert_date": "10/21/2024",
       "coordinates": {
         "latitude": 35.1465,
-        "longitude": -90.0465
+        "longitude": -90.0565
       }
     },
     {
