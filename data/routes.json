@@ -1,7 +1,7 @@
 {
   "routes": [
     { 
-      "route_id": 12345,
+      "route_id": "123A",
       "date": "2024-12-11",
       "vehicle_id": 123456,
       "courier_id": 101,
@@ -13,16 +13,54 @@
       "average_stop_time": "00:10",
       "total_stop_time": "00:40",
       "stops": [
-        ["09:00", "09:10", "08:50", "Location A"],
-        ["10:30", "10:40", "10:20", "Location B"],
-        ["12:00", "12:10", "11:50", "Location C"],
-        ["14:00", "14:10", "13:50", "Location D"]
+        ["09:00", "09:10", "08:50", "123 Main St, Downtown"],
+        ["10:30", "10:40", "10:20", "456 Library Ln, City Center"],
+        ["12:00", "12:10", "11:50", "789 Fuel Rd, Westside"],
+        ["14:00", "14:10", "13:50", "101 Mall Dr, Eastside"]
       ]
     },
     {
-      "route_id": 23456,
+      "route_id": "124A",
       "date": "2024-12-12",
       "vehicle_id": 123456,
+      "courier_id": 101,
+      "courier_name": "John Doe",
+      "station_departure_time": "08:00",
+      "station_return_time": "17:00",
+      "miles_traveled": 125,
+      "total_idle_time": "00:35",
+      "average_stop_time": "00:12",
+      "total_stop_time": "00:45",
+      "stops": [
+        ["09:15", "09:27", "09:05", "234 Oak St, Suburbia"],
+        ["11:00", "11:12", "10:50", "567 Pine St, Uptown"],
+        ["13:00", "13:12", "12:50", "890 Maple Ave, Downtown"],
+        ["15:00", "15:12", "14:50", "123 Elm St, City Center"]
+      ]
+    },
+    {
+      "route_id": "125A",
+      "date": "2024-12-13",
+      "vehicle_id": 123456,
+      "courier_id": 101,
+      "courier_name": "John Doe",
+      "station_departure_time": "08:00",
+      "station_return_time": "17:00",
+      "miles_traveled": 130,
+      "total_idle_time": "00:40",
+      "average_stop_time": "00:15",
+      "total_stop_time": "00:50",
+      "stops": [
+        ["09:30", "09:45", "09:20", "345 Birch St, Westside"],
+        ["11:30", "11:45", "11:20", "678 Cedar St, Eastside"],
+        ["13:30", "13:45", "13:20", "901 Spruce St, Uptown"],
+        ["15:30", "15:45", "15:20", "234 Willow St, Suburbia"]
+      ]
+    },
+    {
+      "route_id": "234A",
+      "date": "2024-12-11",
+      "vehicle_id": 234567,
       "courier_id": 102,
       "courier_name": "Jane Smith",
       "station_departure_time": "08:00",
@@ -32,16 +70,54 @@
       "average_stop_time": "00:12",
       "total_stop_time": "00:48",
       "stops": [
-        ["09:15", "09:27", "09:05", "Location E"],
-        ["11:00", "11:12", "10:50", "Location F"],
-        ["13:00", "13:12", "12:50", "Location G"],
-        ["15:00", "15:12", "14:50", "Location H"]
+        ["09:15", "09:27", "09:05", "456 Maple St, Downtown"],
+        ["11:00", "11:12", "10:50", "789 Oak St, City Center"],
+        ["13:00", "13:12", "12:50", "123 Pine St, Westside"],
+        ["15:00", "15:12", "14:50", "456 Birch St, Eastside"]
       ]
     },
     {
-      "route_id": 34567,
+      "route_id": "235A",
+      "date": "2024-12-12",
+      "vehicle_id": 234567,
+      "courier_id": 102,
+      "courier_name": "Jane Smith",
+      "station_departure_time": "08:00",
+      "station_return_time": "17:00",
+      "miles_traveled": 135,
+      "total_idle_time": "00:40",
+      "average_stop_time": "00:14",
+      "total_stop_time": "00:52",
+      "stops": [
+        ["09:30", "09:45", "09:20", "789 Cedar St, Uptown"],
+        ["11:30", "11:45", "11:20", "123 Spruce St, Suburbia"],
+        ["13:30", "13:45", "13:20", "456 Willow St, Downtown"],
+        ["15:30", "15:45", "15:20", "789 Maple St, City Center"]
+      ]
+    },
+    {
+      "route_id": "236A",
       "date": "2024-12-13",
-      "vehicle_id": 123456,
+      "vehicle_id": 234567,
+      "courier_id": 102,
+      "courier_name": "Jane Smith",
+      "station_departure_time": "08:00",
+      "station_return_time": "17:00",
+      "miles_traveled": 140,
+      "total_idle_time": "00:45",
+      "average_stop_time": "00:16",
+      "total_stop_time": "00:56",
+      "stops": [
+        ["09:45", "10:03", "09:30", "123 Elm St, Westside"],
+        ["11:45", "12:03", "11:30", "456 Birch St, Eastside"],
+        ["13:45", "14:03", "13:30", "789 Cedar St, Uptown"],
+        ["15:45", "16:03", "15:30", "123 Spruce St, Suburbia"]
+      ]
+    },
+    {
+      "route_id": "345A",
+      "date": "2024-12-11",
+      "vehicle_id": 567890,
       "courier_id": 103,
       "courier_name": "Alice Johnson",
       "station_departure_time": "08:00",
@@ -51,296 +127,220 @@
       "average_stop_time": "00:15",
       "total_stop_time": "01:00",
       "stops": [
-        ["09:30", "09:45", "09:20", "Location I"],
-        ["11:30", "11:45", "11:20", "Location J"],
-        ["13:30", "13:45", "13:20", "Location K"],
-        ["15:30", "15:45", "15:20", "Location L"]
+        ["09:30", "09:45", "09:20", "345 Birch St, Westside"],
+        ["11:30", "11:45", "11:20", "678 Cedar St, Eastside"],
+        ["13:30", "13:45", "13:20", "901 Spruce St, Uptown"],
+        ["15:30", "15:45", "15:20", "234 Willow St, Suburbia"]
       ]
     },
     {
-      "route_id": 45678,
-      "date": "2024-12-11",
-      "vehicle_id": 2
-    },
-    {
-      "route_id": 56789,
+      "route_id": "346A",
       "date": "2024-12-12",
-      "vehicle_id": 2
+      "vehicle_id": 567890,
+      "courier_id": 103,
+      "courier_name": "Alice Johnson",
+      "station_departure_time": "08:00",
+      "station_return_time": "17:00",
+      "miles_traveled": 145,
+      "total_idle_time": "00:45",
+      "average_stop_time": "00:18",
+      "total_stop_time": "01:12",
+      "stops": [
+        ["09:45", "10:03", "09:30", "123 Elm St, Westside"],
+        ["11:45", "12:03", "11:30", "456 Birch St, Eastside"],
+        ["13:45", "14:03", "13:30", "789 Cedar St, Uptown"],
+        ["15:45", "16:03", "15:30", "123 Spruce St, Suburbia"]
+      ]
     },
     {
-      "route_id": 67890,
+      "route_id": "347A",
       "date": "2024-12-13",
-      "vehicle_id": 2
+      "vehicle_id": 567890,
+      "courier_id": 103,
+      "courier_name": "Alice Johnson",
+      "station_departure_time": "08:00",
+      "station_return_time": "17:00",
+      "miles_traveled": 150,
+      "total_idle_time": "00:50",
+      "average_stop_time": "00:20",
+      "total_stop_time": "01:20",
+      "stops": [
+        ["10:00", "10:20", "09:45", "345 Birch St, Westside"],
+        ["12:00", "12:20", "11:45", "678 Cedar St, Eastside"],
+        ["14:00", "14:20", "13:45", "901 Spruce St, Uptown"],
+        ["16:00", "16:20", "15:45", "234 Willow St, Suburbia"]
+      ]
     },
     {
-      "route_id": 78901,
+      "route_id": "456A",
       "date": "2024-12-11",
-      "vehicle_id": 3
+      "vehicle_id": 678901,
+      "courier_id": 104,
+      "courier_name": "Bob Brown",
+      "station_departure_time": "08:00",
+      "station_return_time": "17:00",
+      "miles_traveled": 150,
+      "total_idle_time": "00:45",
+      "average_stop_time": "00:18",
+      "total_stop_time": "01:12",
+      "stops": [
+        ["09:45", "10:03", "09:30", "123 Elm St, Westside"],
+        ["11:45", "12:03", "11:30", "456 Birch St, Eastside"],
+        ["13:45", "14:03", "13:30", "789 Cedar St, Uptown"],
+        ["15:45", "16:03", "15:30", "123 Spruce St, Suburbia"]
+      ]
     },
     {
-      "route_id": 89012,
+      "route_id": "457A",
       "date": "2024-12-12",
-      "vehicle_id": 3
+      "vehicle_id": 678901,
+      "courier_id": 104,
+      "courier_name": "Bob Brown",
+      "station_departure_time": "08:00",
+      "station_return_time": "17:00",
+      "miles_traveled": 155,
+      "total_idle_time": "00:50",
+      "average_stop_time": "00:20",
+      "total_stop_time": "01:20",
+      "stops": [
+        ["10:00", "10:20", "09:45", "345 Birch St, Westside"],
+        ["12:00", "12:20", "11:45", "678 Cedar St, Eastside"],
+        ["14:00", "14:20", "13:45", "901 Spruce St, Uptown"],
+        ["16:00", "16:20", "15:45", "234 Willow St, Suburbia"]
+      ]
     },
     {
-      "route_id": 90123,
+      "route_id": "458A",
       "date": "2024-12-13",
-      "vehicle_id": 3
+      "vehicle_id": 678901,
+      "courier_id": 104,
+      "courier_name": "Bob Brown",
+      "station_departure_time": "08:00",
+      "station_return_time": "17:00",
+      "miles_traveled": 160,
+      "total_idle_time": "00:55",
+      "average_stop_time": "00:22",
+      "total_stop_time": "01:28",
+      "stops": [
+        ["10:15", "10:37", "10:00", "123 Elm St, Westside"],
+        ["12:15", "12:37", "12:00", "456 Birch St, Eastside"],
+        ["14:15", "14:37", "14:00", "789 Cedar St, Uptown"],
+        ["16:15", "16:37", "16:00", "123 Spruce St, Suburbia"]
+      ]
     },
     {
-      "route_id": 12346,
+      "route_id": "567A",
       "date": "2024-12-11",
-      "vehicle_id": 4
+      "vehicle_id": 901234,
+      "courier_id": 105,
+      "courier_name": "Charlie Davis",
+      "station_departure_time": "08:00",
+      "station_return_time": "17:00",
+      "miles_traveled": 160,
+      "total_idle_time": "00:50",
+      "average_stop_time": "00:20",
+      "total_stop_time": "01:20",
+      "stops": [
+        ["10:00", "10:20", "09:45", "345 Birch St, Westside"],
+        ["12:00", "12:20", "11:45", "678 Cedar St, Eastside"],
+        ["14:00", "14:20", "13:45", "901 Spruce St, Uptown"],
+        ["16:00", "16:20", "15:45", "234 Willow St, Suburbia"]
+      ]
     },
     {
-      "route_id": 23457,
+      "route_id": "568A",
       "date": "2024-12-12",
-      "vehicle_id": 4
+      "vehicle_id": 901234,
+      "courier_id": 105,
+      "courier_name": "Charlie Davis",
+      "station_departure_time": "08:00",
+      "station_return_time": "17:00",
+      "miles_traveled": 165,
+      "total_idle_time": "00:55",
+      "average_stop_time": "00:22",
+      "total_stop_time": "01:28",
+      "stops": [
+        ["10:15", "10:37", "10:00", "123 Elm St, Westside"],
+        ["12:15", "12:37", "12:00", "456 Birch St, Eastside"],
+        ["14:15", "14:37", "14:00", "789 Cedar St, Uptown"],
+        ["16:15", "16:37", "16:00", "123 Spruce St, Suburbia"]
+      ]
     },
     {
-      "route_id": 34568,
+      "route_id": "569A",
       "date": "2024-12-13",
-      "vehicle_id": 4
+      "vehicle_id": 901234,
+      "courier_id": 105,
+      "courier_name": "Charlie Davis",
+      "station_departure_time": "08:00",
+      "station_return_time": "17:00",
+      "miles_traveled": 170,
+      "total_idle_time": "01:00",
+      "average_stop_time": "00:25",
+      "total_stop_time": "01:40",
+      "stops": [
+        ["10:30", "10:55", "10:15", "345 Birch St, Westside"],
+        ["12:30", "12:55", "12:15", "678 Cedar St, Eastside"],
+        ["14:30", "14:55", "14:15", "901 Spruce St, Uptown"],
+        ["16:30", "16:55", "16:15", "234 Willow St, Suburbia"]
+      ]
     },
     {
-      "route_id": 45679,
+      "route_id": "678A",
       "date": "2024-12-11",
-      "vehicle_id": 5
+      "vehicle_id": 123457,
+      "courier_id": 106,
+      "courier_name": "Diana Evans",
+      "station_departure_time": "08:00",
+      "station_return_time": "17:00",
+      "miles_traveled": 170,
+      "total_idle_time": "00:55",
+      "average_stop_time": "00:22",
+      "total_stop_time": "01:28",
+      "stops": [
+        ["10:15", "10:37", "10:00", "123 Elm St, Westside"],
+        ["12:15", "12:37", "12:00", "456 Birch St, Eastside"],
+        ["14:15", "14:37", "14:00", "789 Cedar St, Uptown"],
+        ["16:15", "16:37", "16:00", "123 Spruce St, Suburbia"]
+      ]
     },
     {
-      "route_id": 56780,
+      "route_id": "679A",
       "date": "2024-12-12",
-      "vehicle_id": 5
+      "vehicle_id": 123457,
+      "courier_id": 106,
+      "courier_name": "Diana Evans",
+      "station_departure_time": "08:00",
+      "station_return_time": "17:00",
+      "miles_traveled": 175,
+      "total_idle_time": "01:00",
+      "average_stop_time": "00:25",
+      "total_stop_time": "01:40",
+      "stops": [
+        ["10:30", "10:55", "10:15", "345 Birch St, Westside"],
+        ["12:30", "12:55", "12:15", "678 Cedar St, Eastside"],
+        ["14:30", "14:55", "14:15", "901 Spruce St, Uptown"],
+        ["16:30", "16:55", "16:15", "234 Willow St, Suburbia"]
+      ]
     },
     {
-      "route_id": 67891,
+      "route_id": "680A",
       "date": "2024-12-13",
-      "vehicle_id": 5
-    },
-    {
-      "route_id": 78902,
-      "date": "2024-12-11",
-      "vehicle_id": 6
-    },
-    {
-      "route_id": 89013,
-      "date": "2024-12-12",
-      "vehicle_id": 6
-    },
-    {
-      "route_id": 90124,
-      "date": "2024-12-13",
-      "vehicle_id": 6
-    },
-    {
-      "route_id": 12347,
-      "date": "2024-12-11",
-      "vehicle_id": 7
-    },
-    {
-      "route_id": 23458,
-      "date": "2024-12-12",
-      "vehicle_id": 7
-    },
-    {
-      "route_id": 34569,
-      "date": "2024-12-13",
-      "vehicle_id": 7
-    },
-    {
-      "route_id": 45670,
-      "date": "2024-12-11",
-      "vehicle_id": 8
-    },
-    {
-      "route_id": 56781,
-      "date": "2024-12-12",
-      "vehicle_id": 8
-    },
-    {
-      "route_id": 67892,
-      "date": "2024-12-13",
-      "vehicle_id": 8
-    },
-    {
-      "route_id": 78903,
-      "date": "2024-12-11",
-      "vehicle_id": 9
-    },
-    {
-      "route_id": 89014,
-      "date": "2024-12-12",
-      "vehicle_id": 9
-    },
-    {
-      "route_id": 90125,
-      "date": "2024-12-13",
-      "vehicle_id": 9
-    },
-    {
-      "route_id": 12348,
-      "date": "2024-12-11",
-      "vehicle_id": 10
-    },
-    {
-      "route_id": 23459,
-      "date": "2024-12-12",
-      "vehicle_id": 10
-    },
-    {
-      "route_id": 34560,
-      "date": "2024-12-13",
-      "vehicle_id": 10
-    },
-    {
-      "route_id": 45671,
-      "date": "2024-12-11",
-      "vehicle_id": 11
-    },
-    {
-      "route_id": 56782,
-      "date": "2024-12-12",
-      "vehicle_id": 11
-    },
-    {
-      "route_id": 67893,
-      "date": "2024-12-13",
-      "vehicle_id": 11
-    },
-    {
-      "route_id": 78904,
-      "date": "2024-12-11",
-      "vehicle_id": 12
-    },
-    {
-      "route_id": 89015,
-      "date": "2024-12-12",
-      "vehicle_id": 12
-    },
-    {
-      "route_id": 90126,
-      "date": "2024-12-13",
-      "vehicle_id": 12
-    },
-    {
-      "route_id": 12349,
-      "date": "2024-12-11",
-      "vehicle_id": 13
-    },
-    {
-      "route_id": 23450,
-      "date": "2024-12-12",
-      "vehicle_id": 13
-    },
-    {
-      "route_id": 34561,
-      "date": "2024-12-13",
-      "vehicle_id": 13
-    },
-    {
-      "route_id": 45672,
-      "date": "2024-12-11",
-      "vehicle_id": 14
-    },
-    {
-      "route_id": 56783,
-      "date": "2024-12-12",
-      "vehicle_id": 14
-    },
-    {
-      "route_id": 67894,
-      "date": "2024-12-13",
-      "vehicle_id": 14
-    },
-    {
-      "route_id": 78905,
-      "date": "2024-12-11",
-      "vehicle_id": 15
-    },
-    {
-      "route_id": 89016,
-      "date": "2024-12-12",
-      "vehicle_id": 15
-    },
-    {
-      "route_id": 90127,
-      "date": "2024-12-13",
-      "vehicle_id": 15
-    },
-    {
-      "route_id": 12350,
-      "date": "2024-12-11",
-      "vehicle_id": 16
-    },
-    {
-      "route_id": 23451,
-      "date": "2024-12-12",
-      "vehicle_id": 16
-    },
-    {
-      "route_id": 34562,
-      "date": "2024-12-13",
-      "vehicle_id": 16
-    },
-    {
-      "route_id": 45673,
-      "date": "2024-12-11",
-      "vehicle_id": 17
-    },
-    {
-      "route_id": 56784,
-      "date": "2024-12-12",
-      "vehicle_id": 17
-    },
-    {
-      "route_id": 67895,
-      "date": "2024-12-13",
-      "vehicle_id": 17
-    },
-    {
-      "route_id": 78906,
-      "date": "2024-12-11",
-      "vehicle_id": 18
-    },
-    {
-      "route_id": 89017,
-      "date": "2024-12-12",
-      "vehicle_id": 18
-    },
-    {
-      "route_id": 90128,
-      "date": "2024-12-13",
-      "vehicle_id": 18
-    },
-    {
-      "route_id": 12351,
-      "date": "2024-12-11",
-      "vehicle_id": 19
-    },
-    {
-      "route_id": 23452,
-      "date": "2024-12-12",
-      "vehicle_id": 19
-    },
-    {
-      "route_id": 34563,
-      "date": "2024-12-13",
-      "vehicle_id": 19
-    },
-    {
-      "route_id": 45674,
-      "date": "2024-12-11",
-      "vehicle_id": 20
-    },
-    {
-      "route_id": 56785,
-      "date": "2024-12-12",
-      "vehicle_id": 20
-    },
-    {
-      "route_id": 67896,
-      "date": "2024-12-13",
-      "vehicle_id": 20
+      "vehicle_id": 123457,
+      "courier_id": 106,
+      "courier_name": "Diana Evans",
+      "station_departure_time": "08:00",
+      "station_return_time": "17:00",
+      "miles_traveled": 180,
+      "total_idle_time": "01:05",
+      "average_stop_time": "00:28",
+      "total_stop_time": "01:52",
+      "stops": [
+        ["10:45", "11:13", "10:30", "123 Elm St, Westside"],
+        ["12:45", "13:13", "12:30", "456 Birch St, Eastside"],
+        ["14:45", "15:13", "14:30", "789 Cedar St, Uptown"],
+        ["16:45", "17:13", "16:30", "123 Spruce St, Suburbia"]
+      ]
     }
   ]
 }
