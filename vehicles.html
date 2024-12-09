@@ -49,7 +49,7 @@
   </ul>
 </div>
 
-<!--  Collapseable Sidebar  -->
+<!--  Collapsible Sidebar  -->
 <div class="sidebar" id="sidebar">
   <h1>Filters</h1>
   <div class="search-wrapper">
@@ -62,45 +62,40 @@
   </div>
 
   <p>Alert Type</p>
-  <select id="alert-type" class="dropdown">
-    <option value="" disabled selected>Select Alert Type</option>
-    <option value="alert-a">Alert A</option>
-    <option value="alert-b">Alert B</option>
-    <option value="alert-c">Alert C</option>
-  </select>
+  <div id="alert-type" class="checkbox-group">
+    <label><input type="checkbox" value="alert-a"> Alert A</label>
+    <label><input type="checkbox" value="alert-b"> Alert B</label>
+    <label><input type="checkbox" value="alert-c"> Alert C</label>
+  </div>
 
   <p>Make</p>
-  <select id="make" class="dropdown">
-    <option value="" disabled selected>Select Make</option>
-    <option value="make-toyota">Toyota</option>
-    <option value="make-ford">Ford</option>
-    <option value="make-honda">Honda</option>
-  </select>
+  <div id="make" class="checkbox-group">
+    <label><input type="checkbox" value="make-toyota"> Toyota</label>
+    <label><input type="checkbox" value="make-ford"> Ford</label>
+    <label><input type="checkbox" value="make-honda"> Honda</label>
+  </div>
 
   <p>Model</p>
-  <select id="model" class="dropdown">
-    <option value="" disabled selected>Select Model</option>
-    <option value="model-corolla">Corolla</option>
-    <option value="model-mustang">Mustang</option>
-    <option value="model-civic">Civic</option>
-  </select>
+  <div id="model" class="checkbox-group">
+    <label><input type="checkbox" value="model-corolla"> Corolla</label>
+    <label><input type="checkbox" value="model-mustang"> Mustang</label>
+    <label><input type="checkbox" value="model-civic"> Civic</label>
+  </div>
 
   <p>Time In Service</p>
-  <select id="time-in-service" class="dropdown">
-    <option value="" disabled selected>Select Time in Service</option>
-    <option value="less-than-1">Less than 1 year</option>
-    <option value="1-to-3">1 to 3 years</option>
-    <option value="3-to-5">3 to 5 years</option>
-    <option value="more-than-5">More than 5 years</option>
-  </select>
+  <div id="time-in-service" class="checkbox-group">
+    <label><input type="checkbox" value="less-than-1"> Less than 1 year</label>
+    <label><input type="checkbox" value="1-to-3"> 1 to 3 years</label>
+    <label><input type="checkbox" value="3-to-5"> 3 to 5 years</label>
+    <label><input type="checkbox" value="more-than-5"> More than 5 years</label>
+  </div>
 
   <p>Installed Technology</p>
-  <select id="installed-technology" class="dropdown">
-    <option value="" disabled selected>Select Installed Technology</option>
-    <option value="gps">GPS</option>
-    <option value="bluetooth">Bluetooth</option>
-    <option value="camera">Camera</option>
-  </select>
+  <div id="installed-technology" class="checkbox-group">
+    <label><input type="checkbox" value="gps"> GPS</label>
+    <label><input type="checkbox" value="bluetooth"> Bluetooth</label>
+    <label><input type="checkbox" value="camera"> Camera</label>
+  </div>
 </div>
 
 <!-- Dynamic Main Content -->
@@ -110,3 +105,4 @@
 
 </body>
 </html>
+
