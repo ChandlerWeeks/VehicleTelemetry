@@ -14,8 +14,9 @@
     <link rel="stylesheet" href ="./assets/reset.css">
     <link rel="stylesheet" href="./assets/header.css">
     <link rel="stylesheet" href="./assets/sidebar.css">
-    <link rel="stylesheet" href="./assets/map.css">
+    <link rel="stylesheet" href="./assets/mapScene.css">
     <script src="header.js"></script>
+    <script src="mapScene.js"></script>
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
@@ -25,45 +26,105 @@
     crossorigin=""></script>
   </head>
   <body>
+    <!-- Header  -->
     <div class="header">
       <div class="bar">
         <div class="left-content">
-          <div class="logo-container">
-            <img src="assets/images/logo.png" class="logo" alt="fedex-logo">
-          </div>
+          <img src="assets/images/logo.png" class="logo" alt="fedex-logo">
+          <h2 class="vehicle-telemetry-title">Vehicle Telemetry</h2>
+        </div>
+        <div class="center-content">
+          <div class="logo-container"></div>
         </div>
         <div class="right-content">
-          <div class="buttons-container">
-            <button class="unselected-nav-button" id="vehicle-button">Vehicles</button>
-            <button class="selected-nav-button" id="map-button">Map</button>
-          </div>
           <div class="profile-container">
-            <img src="assets/images/profile_icon.png" class="profile-icon">
+            <div class="profile-icon-wrapper">
+              <i class="material-icons profile-icon">person</i>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="sidebar">
-      <h1>Filters</h1>
-      <div class="search-wrapper">
-        <div class="search">
-            <input class="sidebar-search" type="text" placeholder="Search...">
-            <button class="search-button">
-              <i class="material-icons">search</i>
-            </button>
-        </div>
-      </div>
-      <h2>Advanced</h2>
-      <p>Alert Type</p>
-      <p>Make And Model</p>
-      <p>Time In Service</p>
-      <p>Installed Technology</p>
+    <!-- Navbar  -->
+    <div class="css-navbar">
+      <ul class="navbar-list">
+        <li class="navbar-item nav-item" id="hamburger"><i class="material-icons">menu</i>Filters</li>
+        <li class="navbar-item"><a href="vehicles.html">Vehicles</a></li>
+        <li class="navbar-item navbar-item-active"><a href="map.html">Map</a></li>
+      </ul>
     </div>
 
-    <div class="content">
-      <div id="map"></div>
+<!--  Collapseable Sidebar  -->
+<div class="sidebar" id="sidebar">
+  <h1>Filters</h1>
+  <div class="search-wrapper">
+    <div class="search">
+      <input class="sidebar-search" type="text" placeholder="Search...">
+      <button class="search-button">
+        <i class="material-icons">search</i>
+      </button>
     </div>
   </div>
-  </body>
-</html>
+
+  <p>Alert Type</p>
+  <select id="alert-type" class="dropdown">
+    <option value="" disabled selected>Select Alert Type</option>
+    <option value="alert-a">Alert A</option>
+    <option value="alert-b">Alert B</option>
+    <option value="alert-c">Alert C</option>
+  </select>
+
+  <p>Make</p>
+  <select id="make" class="dropdown">
+    <option value="" disabled selected>Select Make</option>
+    <option value="make-toyota">Toyota</option>
+    <option value="make-ford">Ford</option>
+    <option value="make-honda">Honda</option>
+  </select>
+
+  <p>Model</p>
+  <select id="model" class="dropdown">
+    <option value="" disabled selected>Select Model</option>
+    <option value="model-corolla">Corolla</option>
+    <option value="model-mustang">Mustang</option>
+    <option value="model-civic">Civic</option>
+  </select>
+
+  <p>Time In Service</p>
+  <select id="time-in-service" class="dropdown">
+    <option value="" disabled selected>Select Time in Service</option>
+    <option value="less-than-1">Less than 1 year</option>
+    <option value="1-to-3">1 to 3 years</option>
+    <option value="3-to-5">3 to 5 years</option>
+    <option value="more-than-5">More than 5 years</option>
+  </select>
+
+  <p>Installed Technology</p>
+  <select id="installed-technology" class="dropdown">
+    <option value="" disabled selected>Select Installed Technology</option>
+    <option value="gps">GPS</option>
+    <option value="bluetooth">Bluetooth</option>
+    <option value="camera">Camera</option>
+  </select>
+</div>
+
+<!--  Map?!  -->
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure the full screen height is available */
+  }
+
+  .map {
+    position: fixed;
+    top: 0; /* Start from the top */
+    bottom: 0; /* Extend to the bottom */
+    width: 100%; /* Full width of the screen */
+    height: 100%; /* Occupy the full screen height */
+  }
+</style>
+<div class="map" id="map">
+  <div id="map"></div>
+</div>
