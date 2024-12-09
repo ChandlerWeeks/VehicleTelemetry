@@ -8,6 +8,7 @@
   border-right: 1px solid black;
   z-index: 1000;
   transition: left 0.3s ease-in-out;
+  padding: 10px;
 }
 
 .sidebar.visible {
@@ -28,6 +29,7 @@
   width: 95%;
   position: relative;
   display: flex;
+  margin-bottom: 10px;
 }
 
 .sidebar-search {
@@ -59,10 +61,14 @@
 
 h1 {
   text-align: center;
+  margin-bottom: 15px;
+  font-size: 25px;
 }
 
 h2 {
   padding-left: 15px;
+  margin-bottom: 15px;
+  font-size: 18px;
 }
 
 .filter-wrapper {
@@ -76,7 +82,44 @@ label {
   font-size: 16px;
   margin-bottom: 1px;
   color: #222;
-  font-weight: 800;
+  font-weight: bold;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #660099;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: normal;
+  color: #222;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.checkbox-group input[type="checkbox"]:hover,
+.checkbox-group input[type="checkbox"]:focus {
+  border-color: #660099;
+}
+
+.checkbox-group input[type="checkbox"]:checked {
+  background-color: #660099;
+  border-color: #660099;
 }
 
 .dropdown {
@@ -89,3 +132,14 @@ label {
   outline: none;
   background-color: #fff;
 }
+
+.sidebar h2,
+.sidebar p {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.sidebar .checkbox-group {
+  margin-top: 0;
+}
+
