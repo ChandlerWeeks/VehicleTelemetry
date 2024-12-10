@@ -2,8 +2,8 @@
   "alert_type": ["software", "battery", "oil", "engine", "tires", "brake pads", "none"],
   "make": {
     "Freightliner": ["Cascadia", "M2", "Columbia"],
-    "Mercedes": ["Srinter"],
-    "Ford": ["F150", "F250", "F350"],
+    "Mercedes-Benz": ["Sprinter"],
+    "Ford": ["F-150", "F-250", "F-350"],
     "Isuzu": ["NPR", "NQR", "NRR", "Box Truck"]
   },
   "time_in_service": ["1 year or less", "1 to 3 years", "3 to 5 years", "5+ years"],

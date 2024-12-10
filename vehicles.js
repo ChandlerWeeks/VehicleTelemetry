@@ -11,6 +11,7 @@ fetch("./data/vehicles.json")
 // Function to create and add vehicle divs to the page
 function addVehiclesToPage(vehicles) {
   const vehicleContainer = document.getElementById("card-container");
+  vehicleContainer.innerHTML = ""; // Clear existing vehicles
 
   vehicles.forEach((vehicle) => {
     // define data
@@ -84,3 +85,58 @@ function addVehiclesToPage(vehicles) {
     });
   });
 }
+
+function applyFiltersToVehicles() {
+  fetch("./data/vehicles.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const selectedFilters = getSelectedFilters();
+      const filteredVehicles = data.companyVehicles.filter((vehicle) => {
+        return (
+          (selectedFilters.alert_type.length === 0 || selectedFilters.alert_type.some(alert => vehicle.alerts.includes(alert))) &&
+          (selectedFilters.time_in_service.length === 0 || selectedFilters.time_in_service.includes(vehicle.time_in_service)) &&
+          (selectedFilters.installed_technology.length === 0 || selectedFilters.installed_technology.some(tech => vehicle.installed_technology.includes(tech))) &&
+          (Object.keys(selectedFilters.make).length === 0 || (selectedFilters.make[vehicle.make] && selectedFilters.make[vehicle.make].includes(vehicle.model)))
+        );
+      });
+      addVehiclesToPage(filteredVehicles);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+}
+
+function getSelectedFilters() {
+  const selectedFilters = {
+    alert_type: Array.from(document.querySelectorAll("#alert-type input:checked")).map(input => input.value),
+    make: {},
+    time_in_service: Array.from(document.querySelectorAll("#time-in-service input:checked")).map(input => input.value),
+    installed_technology: Array.from(document.querySelectorAll("#installed-technology input:checked")).map(input => input.value)
+  };
+
+  document.querySelectorAll("#make > div").forEach(makeDiv => {
+    const makeElement = makeDiv.querySelector("strong");
+    if (makeElement) {
+      const make = makeElement.innerText;
+      const modelList = makeDiv.nextElementSibling;
+      if (modelList) {
+        const selectedModels = Array.from(modelList.querySelectorAll("input:checked")).map(input => input.value);
+        if (selectedModels.length > 0) {
+          selectedFilters.make[make] = selectedModels;
+        }
+      }
+    }
+  });
+
+  return selectedFilters;
+}
+
+// Ensure the element exists before adding the event listener
+document.addEventListener("DOMContentLoaded", function() {
+  const filtersElement = document.getElementById("filters");
+  if (filtersElement) {
+    filtersElement.addEventListener("change", function() {
+      applyFiltersToVehicles();
+    });
+  }
+});
