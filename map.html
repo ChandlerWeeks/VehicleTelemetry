@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./assets/mapScene.css">
     <script src="header.js"></script>
     <script src="mapScene.js"></script>
+    <script src="filters.js"></script>
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
@@ -55,54 +56,34 @@
       </ul>
     </div>
 
-    <!--  Collapsible Sidebar  -->
-    <div class="sidebar" id="sidebar">
-      <h1>Filters</h1>
-      <div class="search-wrapper">
-        <div class="search">
-          <input class="sidebar-search" type="text" placeholder="Search...">
-          <button class="search-button">
-            <i class="material-icons">search</i>
-          </button>
-        </div>
-      </div>
-
-      <p>Alert Type</p>
-      <div id="alert-type" class="checkbox-group">
-        <label><input type="checkbox" value="alert-a"> Alert A</label>
-        <label><input type="checkbox" value="alert-b"> Alert B</label>
-        <label><input type="checkbox" value="alert-c"> Alert C</label>
-      </div>
-
-      <p>Make</p>
-      <div id="make" class="checkbox-group">
-        <label><input type="checkbox" value="make-toyota"> Toyota</label>
-        <label><input type="checkbox" value="make-ford"> Ford</label>
-        <label><input type="checkbox" value="make-honda"> Honda</label>
-      </div>
-
-      <p>Model</p>
-      <div id="model" class="checkbox-group">
-        <label><input type="checkbox" value="model-corolla"> Corolla</label>
-        <label><input type="checkbox" value="model-mustang"> Mustang</label>
-        <label><input type="checkbox" value="model-civic"> Civic</label>
-      </div>
-
-      <p>Time In Service</p>
-      <div id="time-in-service" class="checkbox-group">
-        <label><input type="checkbox" value="less-than-1"> Less than 1 year</label>
-        <label><input type="checkbox" value="1-to-3"> 1 to 3 years</label>
-        <label><input type="checkbox" value="3-to-5"> 3 to 5 years</label>
-        <label><input type="checkbox" value="more-than-5"> More than 5 years</label>
-      </div>
-
-      <p>Installed Technology</p>
-      <div id="installed-technology" class="checkbox-group">
-        <label><input type="checkbox" value="gps"> GPS</label>
-        <label><input type="checkbox" value="bluetooth"> Bluetooth</label>
-        <label><input type="checkbox" value="camera"> Camera</label>
-      </div>
+<!--  Collapsible Sidebar  -->
+<div class="sidebar" id="sidebar">
+  <h1>Filters</h1>
+  <div class="search-wrapper">
+    <div class="search">
+      <input id='filters-search' class="sidebar-search" type="text" placeholder="Search...">
     </div>
+  </div>
+
+  <div class="filters" id="filters">
+    <p>Alert Type</p>
+    <div id="alert-type" class="checkbox-group">
+    </div>
+
+    <p>Make & Model</p>
+    <div id="make" class="checkbox-group">
+    </div>
+
+    <p>Time In Service</p>
+    <div id="time-in-service" class="checkbox-group">
+    </div>
+
+    <p>Installed Technology</p>
+    <div id="installed-technology" class="checkbox-group">
+    </div>
+    
+  </div>
+</div>
 
 <!--  Map?!  -->
 <style>
